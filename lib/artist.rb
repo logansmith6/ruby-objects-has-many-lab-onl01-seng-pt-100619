@@ -20,6 +20,12 @@ class Artist
     add_song(song)
   end
 
+  def song_count
+    song_count = 0
+    Song.all.select {|song| song_count +=1 }
+    song_count
+  end
+
 
 
 end
