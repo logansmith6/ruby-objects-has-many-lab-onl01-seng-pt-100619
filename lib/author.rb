@@ -19,7 +19,12 @@ class Author
   def add_post_by_title(title)
     post = Post.new(title)
     add_post(post)
-
   end
+
+  def post_count
+    counter = 0
+    Post.all.select {|post| counter += 1}
+    counter 
+  end 
 
 end
