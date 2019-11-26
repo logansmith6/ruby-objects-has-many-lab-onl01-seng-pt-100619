@@ -1,13 +1,14 @@
 require 'pry'
 class Artist
-  attr_accessor :name, :song
-  @@songs = []
+  attr_accessor :name
+
   def initialize(name)
     @name = name
+    @songs = []
   end
 
   def songs(song)
-    @song = song
+    @songs << song
   end
 
 
