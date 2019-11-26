@@ -2,4 +2,12 @@ require 'pry'
 class Song
 
 
-end 
+  @@all = []
+
+  def initialize(name)
+    @@all << name
+  end
+
+
+
+end
