@@ -12,7 +12,7 @@ class Post
     @@all
   end
 
-  
+
 
 
 end
