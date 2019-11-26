@@ -21,7 +21,7 @@ class Author
     add_post(post)
   end
 
-  def post_count
+  def self.post_count
     counter = 0
     Post.all.select {|post| counter += 1}
     counter
