@@ -23,7 +23,7 @@ class Artist
   def song_count
     song_counter = 0
     Song.all.select {|song| song_counter +=1 }
-    song_counter 
+    song_counter
   end
 
 
