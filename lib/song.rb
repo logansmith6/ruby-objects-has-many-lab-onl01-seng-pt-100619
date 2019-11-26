@@ -1,11 +1,12 @@
 require 'pry'
 class Song
 
-
+  attr_accessor :name
   @@all = []
 
   def initialize(name)
-    @@all << name
+    @name = name
+    @@all << @name
   end
 
 
