@@ -16,12 +16,12 @@ class Author
     post.author = self
   end
 
-  def author_name 
-    if Post.author == nil 
-      nil 
-    else 
-      Post.author.name 
-    end 
-  end 
+  def author_name
+    if Post.author == nil
+      nil
+    else
+      Post.author.name
+    end
+  end
 
 end
