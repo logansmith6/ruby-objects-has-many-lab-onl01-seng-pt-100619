@@ -24,7 +24,7 @@ class Author
   def post_count
     counter = 0
     Post.all.select {|post| counter += 1}
-    counter 
-  end 
+    counter
+  end
 
 end
